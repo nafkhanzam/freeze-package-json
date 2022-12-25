@@ -1,5 +1,5 @@
 import {Command, Flags} from "@oclif/core";
-import {execaCommand, fs} from "../lib";
+import {execaCommand, fs} from "../lib.js";
 import {
   pkgListValidator,
   pkgValidator,
@@ -7,7 +7,7 @@ import {
   type PkgList,
   type PkgListRecord,
   type PkgRecord,
-} from "../validators/package";
+} from "../validators/package.js";
 
 export default class FreezePkgCommand extends Command {
   static override description = "Freeze dependencies in `package.json`.";

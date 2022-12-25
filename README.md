@@ -30,8 +30,6 @@ USAGE
 # Commands
 <!-- commands -->
 * [`freeze-pkg freeze`](#freeze-pkg-freeze)
-* [`freeze-pkg hello PERSON`](#freeze-pkg-hello-person)
-* [`freeze-pkg hello world`](#freeze-pkg-hello-world)
 * [`freeze-pkg help [COMMAND]`](#freeze-pkg-help-command)
 * [`freeze-pkg plugins`](#freeze-pkg-plugins)
 * [`freeze-pkg plugins:install PLUGIN...`](#freeze-pkg-pluginsinstall-plugin)
@@ -42,7 +40,6 @@ USAGE
 * [`freeze-pkg plugins:uninstall PLUGIN...`](#freeze-pkg-pluginsuninstall-plugin-1)
 * [`freeze-pkg plugins:uninstall PLUGIN...`](#freeze-pkg-pluginsuninstall-plugin-2)
 * [`freeze-pkg plugins update`](#freeze-pkg-plugins-update)
-* [`freeze-pkg test [FILE]`](#freeze-pkg-test-file)
 
 ## `freeze-pkg freeze`
 
@@ -60,47 +57,7 @@ DESCRIPTION
   Freeze dependencies in `package.json`.
 ```
 
-_See code: [dist/commands/freeze/index.ts](https://github.com/nafkhanzam/freeze-pkg/blob/v0.0.1/dist/commands/freeze/index.ts)_
-
-## `freeze-pkg hello PERSON`
-
-Say hello
-
-```
-USAGE
-  $ freeze-pkg hello [PERSON] -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Whom is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ oex hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [dist/commands/hello/index.ts](https://github.com/nafkhanzam/freeze-pkg/blob/v0.0.1/dist/commands/hello/index.ts)_
-
-## `freeze-pkg hello world`
-
-Say hello world
-
-```
-USAGE
-  $ freeze-pkg hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ oex hello world
-  hello world! (./src/commands/hello/world.ts)
-```
+_See code: [dist/commands/freeze.ts](https://github.com/nafkhanzam/freeze-pkg/blob/v0.0.1/dist/commands/freeze.ts)_
 
 ## `freeze-pkg help [COMMAND]`
 
@@ -351,25 +308,4 @@ FLAGS
 DESCRIPTION
   Update installed plugins.
 ```
-
-## `freeze-pkg test [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ freeze-pkg test [FILE] [-n <value>] [-f]
-
-FLAGS
-  -f, --force
-  -n, --name=<value>  name to print
-
-DESCRIPTION
-  describe the command here
-
-EXAMPLES
-  $ freeze-pkg test
-```
-
-_See code: [dist/commands/test.ts](https://github.com/nafkhanzam/freeze-pkg/blob/v0.0.1/dist/commands/test.ts)_
 <!-- commandsstop -->

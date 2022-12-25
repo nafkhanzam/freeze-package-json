@@ -1,4 +1,4 @@
-import {zod} from "../lib";
+import {zod} from "../lib.js";
 
 const pkgRecordValidator = zod.record(zod.string());
 export type PkgRecord = zod.infer<typeof pkgRecordValidator>;
