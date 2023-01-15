@@ -39,7 +39,7 @@ export default class FreezePkgCommand extends Command {
     this.tryAssign(pkgRaw, flags.pkgManager, pkg, pkgList, "dependencies");
     this.tryAssign(pkgRaw, flags.pkgManager, pkg, pkgList, "devDependencies");
 
-    fs.writeFileSync(flags.file, JSON.stringify(pkgRaw, null, 2));
+    fs.writeFileSync(flags.file, JSON.stringify(pkgRaw, null, 2) + "\n");
     this.log("Successfully freezes package.json!");
   }
 
